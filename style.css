@@ -1,0 +1,65 @@
+/**
+   Folha de estilo do site Pizzaria Digiuseppe
+   @Autor  Gabriely Barreto Almeida 
+   @link https://gabrielybarreto
+ */
+
+ /*Layout *******************************************/
+
+ /* Variaveis cores */
+ :root {
+    --vermelho: #ff010d;
+    --bege: #FFF3E0;
+    --marron: #5D4037;
+    --branco: #ffffff;
+    --preto: #000000;
+    --vermelho_escuro: #bf040d;
+
+ }
+ /* fim da variaveis cores *************************/
+
+ /* CSS reset-----------------------------*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: "Lobster Two", "Open Sans";
+ }
+
+ /* fim do layout*********************************/
+
+ /* Smartphone Portrait --------------------------------*/
+
+
+ @media (min-width: 576px) {
+   
+}
+/*fim do Smartphone----------------------------- */
+
+/* Tablet portrait */
+@media (min-width: 768px) {
+
+}
+/* fim do tablet ----------------------------*/
+
+/* Tablet landscape */
+@media (min-width: 992px) {
+}
+/*---fim de landscape-------------------------*/
+
+/* Notebook / PC - HD*/
+@media (min-width: 1200px) {
+}
+/*- fim do notebook ------------------------ */
+
+/* Notebook /PC /TV  -  FULL HD ou 4k*/
+@media (min-width: 1400px) {
+}
+ /*Fim - Notebook---------------------------------  */
+
+
+ /*Fim - Smartphone Portrait---------------------------------  */
+
