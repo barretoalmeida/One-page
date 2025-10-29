@@ -4,79 +4,95 @@
    @link https://gabrielybarreto
  */
 
- /*Layout *******************************************/
+/*Layout *******************************************/
 
- /* Variaveis cores */
- :root {
-    --vermelho: #ff010d;
-    --bege: #FFF3E0;
-    --marron: #5D4037;
-    --branco: #ffffff;
-    --preto: #000000;
-    --vermelho_escuro: #bf040d;
+/* Variaveis cores */
+:root {
+   --vermelho: #ff010d;
+   --bege: #FFF3E0;
+   --marron: #5D4037;
+   --branco: #ffffff;
+   --preto: #000000;
+   --vermelho_escuro: #bf040d;
 
- }
- /* fim da variaveis cores *************************/
+}
 
- /* CSS reset-----------------------------*/
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+/* fim da variaveis cores *************************/
 
- body {
-    font-family: "Lobster Two", "Open Sans";
- }
+/* CSS reset-----------------------------*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
-   .container {
-      display: flex; 
-      margin: auto;
-   }
+body {
+   font-family: "Lobster Two", "Open Sans";
+}
 
-   .layout {
-      margin: auto;
-   }
+.container {
+   display: flex;
+   margin: 0 auto;  /*Centralizar o leyout e o conterner*/
+}
 
- /* fim do layout*********************************/
+/* Criar  Botão  */
+.btn {
+   text-decoration: none;
+   font-size: 1.3rem;
+   font-weight: 700;
+   background-color: var(--marron);
+   padding: 10px 40px;
+   color: var(--branco);
+   border-radius: 30px;
+   border: 1px solid var(--branco);
+   text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 
- /* Smartphone Portrait --------------------------------*/
- /* cebeçario*/
- 
+}
 
- header {
+
+
+/* fim do layout*********************************/
+
+/* Smartphone Portrait --------------------------------*/
+/* cebeçario*/
+
+
+header {
    height: 80px;
-   background-color:#ff010d
- }
- .logo img {
+   background-color: var(--vermelho)
+}
+
+.logo img {
    width: 100px;
    height: 100px;
-  
- }
- #check {
-   display: none; /*sempre que quiser remover alguma coisa */  
- }
 
- label {
+}
+
+#check {
+   display: none;
+   /*sempre que quiser remover alguma coisa */
+}
+
+label {
    font-size: 3rem;
    color: rgba(245, 245, 220, 1);
    position: fixed;
    top: 5px;
    right: 15px;
- }
+}
 
- nav ul {
+nav ul {
    list-style: none;
    height: 100vh;
    position: fixed;
    top: 60px;
-   background-color:  rgba(255, 0, 0, 0.75);
-   width: 65%; 
+   background-color: rgba(255, 0, 0, 0.75);
+   width: 65%;
    /*tamanho da tela que vai pegar o menu*/
    right: -65%;
    /*Ajustar com width*/
    transition: all 0.5s;
- }
+}
 
 /* Ação para uma caixa check*/
 /*Quando selecionado mudar ul */
@@ -85,53 +101,144 @@
    /*background-color:  var(--marron); /*Mudar o ul total*/
 }
 
- nav ul li {
+nav ul li {
    padding: 15px;
    border-bottom: 1px solid var(--vermelho_escuro);
    text-align: right;
- }
+}
 
- nav ul li a {
+nav ul li a {
    /*Remover o sublinhado do texto*/
    text-decoration: none;
    color: var(--branco);
 
- }
+}
+
+/* Principal banner */
+
+main{
+   height: 80vh;
+   background: url(img/banner2.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+main .container{
+   /* Relativo ao main */
+   height: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+main h1{
+   color: var(--branco);
+   /* font-family */
+   font-size: 2rem;
+   text-shadow: 10px 10px 5px var(--preto),0px 5px 5px rgb(0, 0, 0),0px 15px 15px rgb(0, 0, 0),0px 20px 20px rgba(0, 0, 0, 0.993);
+   margin-bottom: 10px;
+}
+
+main h2{
+   color: var(--branco);
+   font-size: 19px;
+   font-family: OpenSans;
+   text-shadow: 10px 10px 5px var(--preto),0px 5px 5px rgb(0, 0, 0),0px 15px 15px rgb(0, 0, 0),0px 20px 20px rgba(0, 0, 0, 0.993);
+   margin-bottom: 90px;
+}
+
+
+
 
 /*fim do Smartphone----------------------------- */
 
 /* smartphone landscape ----------------------*/
 @media (min-width: 576px) {
+
+   /* layout */
+   .container {
+      max-width: 540px;
+   }
+
    /* Cabeçario */
    nav ul {
       width: 35%;
       right: -35%;
       transition: all 0.5s;
    }
+ 
+   /* Principal main */
+   main {
+      height: 70vh;
+   }
+
+   main h1{
+      font-size: 2.75rem;
+   }
+
+   main h2{
+      font-size: 2.5rem;
+   }
 }
+
+
+
 
 /*fim do landscape----------------------------*/
 /* Tablet portrait */
 @media (min-width: 768px) {
 
+   /* layout */
+   .container {
+      max-width: 720px;
+
+   }
+
+   /* principal main */
+   main h1{
+      font-size: 3.9rem;
+   }
+
+   main h2{
+      font-size: 3rem;
+   }
 }
+
 /* fim do tablet ----------------------------*/
 
 /* Tablet landscape */
 @media (min-width: 992px) {
+
+   /* layout */
+   .container {
+      max-width: 960px;
+   }
+
+   /* Principal main */
+
 }
+
 /*---fim de landscape-------------------------*/
 
 /* Notebook / PC - HD*/
 @media (min-width: 1200px) {
+
+   /* layout */
+   .container {
+
+      justify-content: space-between;
+      max-width: 1140px;
+   }
+
+   /* Cabeçario */
    header {
       height: 100px;
 
    }
 
    .logo img {
-   width: 150px;
-   height: 150px;
+      width: 150px;
+      height: 150px;
    }
 
    label {
@@ -143,24 +250,51 @@
       width: 100%;
       height: auto;
       background-color: transparent;
+      margin-top: 25px;
    }
+
    nav ul li {
       float: left;
       border: 0;
    }
 
-   nav ul li a:hover{
+   nav ul li a:hover {
       color: var(--preto);
-      
+
+   }
+
+   /* principol */
+   main {
+      height: 85vh;
+   }
+
+   main h1 {
+      font-size: 4rem;
+   }
+
+   main h2 {
+      font-size: 1rem;
    }
 }
+
 /*- fim do notebook ------------------------ */
 
 /* Notebook /PC /TV  -  FULL HD ou 4k*/
 @media (min-width: 1400px) {
+   /* layout */
+   .container{
+      max-width: 1320px;
+   }
+
+   /* principal */
+   main h1{
+      font-size: 6rem;
+   }
+
+   main h2{
+      font-size: 3rem;
+      margin-bottom: 190px;
+   }
 }
- /*Fim - Notebook---------------------------------  */
 
-
- /*Fim - Smartphone Portrait---------------------------------  */
-
+/*Fim - Notebook---------------------------------  */
