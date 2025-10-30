@@ -38,14 +38,14 @@ body {
 /* Criar  Botão  */
 .btn {
    text-decoration: none;
-   font-size: 1.3rem;
+   font-size: 1.2rem;
    font-weight: 700;
    background-color: var(--marron);
-   padding: 10px 40px;
+   padding: 10px 20px;
    color: var(--branco);
    border-radius: 30px;
-   border: 1px solid var(--branco);
    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.897);
 
 }
 
@@ -59,7 +59,7 @@ body {
 
 header {
    height: 80px;
-   background-color: var(--vermelho)
+   background-color: var(--vermelho_escuro)
 }
 
 .logo img {
@@ -173,11 +173,11 @@ main h2{
    }
 
    main h1{
-      font-size: 2.75rem;
+      font-size: 1.95rem;
    }
 
    main h2{
-      font-size: 2.5rem;
+      font-size: 1rem;
    }
 }
 
@@ -251,6 +251,7 @@ main h2{
       height: auto;
       background-color: transparent;
       margin-top: 25px;
+      font-size: 1.5rem;
    }
 
    nav ul li {
