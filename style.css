@@ -32,7 +32,8 @@ body {
 
 .container {
    display: flex;
-   margin: 0 auto;  /*Centralizar o leyout e o conterner*/
+   margin: 0 auto;
+   /*Centralizar o leyout e o conterner*/
 }
 
 /* Criar  Botão  */
@@ -116,14 +117,14 @@ nav ul li a {
 
 /* Principal banner */
 
-main{
+main {
    height: 80vh;
    background: url(img/banner2.jpg);
    background-size: cover;
    background-position: center;
 }
 
-main .container{
+main .container {
    /* Relativo ao main */
    height: 100%;
    flex-direction: column;
@@ -131,22 +132,68 @@ main .container{
    justify-content: center;
 }
 
-main h1{
+main h1 {
    color: var(--branco);
    /* font-family */
    font-size: 2rem;
-   text-shadow: 10px 10px 5px var(--preto),0px 5px 5px rgb(0, 0, 0),0px 15px 15px rgb(0, 0, 0),0px 20px 20px rgba(0, 0, 0, 0.993);
+   text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
    margin-bottom: 10px;
 }
 
-main h2{
+main h2 {
    color: var(--branco);
    font-size: 19px;
    font-family: OpenSans;
-   text-shadow: 10px 10px 5px var(--preto),0px 5px 5px rgb(0, 0, 0),0px 15px 15px rgb(0, 0, 0),0px 20px 20px rgba(0, 0, 0, 0.993);
+   text-shadow: 10px 10px 5px var(--preto), 0px 5px 5px rgb(0, 0, 0), 0px 15px 15px rgb(0, 0, 0), 0px 20px 20px rgba(0, 0, 0, 0.993);
    margin-bottom: 90px;
 }
 
+/* Destaque */
+
+#destaque {
+   padding: 50px 10px;
+   background: url(./img/bannerescuro.png);
+   background-size: cover;
+   background-position: center;
+
+}
+
+
+#destaque.container {
+   flex-direction: column;
+}
+
+#hero {
+   text-align: center;
+}
+
+#hero img {
+   width: 300px;
+   height: 300px;
+   margin-bottom: 25px;
+}
+
+.hero-text h2 {
+   font-size: 1.6rem;
+   color: var(--vermelho);
+   margin-bottom: 15px;
+
+}
+
+.topic {
+   display: flex;
+   align-items: center;
+   margin-top: 15px;
+}
+
+
+.hero p {
+   margin-top: 15px;
+}
+
+.hero-text {
+   color: var(--branco);
+}
 
 
 
@@ -166,19 +213,46 @@ main h2{
       right: -35%;
       transition: all 0.5s;
    }
- 
+
    /* Principal main */
    main {
       height: 70vh;
    }
 
-   main h1{
+   main h1 {
       font-size: 1.95rem;
    }
 
-   main h2{
+   main h2 {
       font-size: 1rem;
    }
+
+   /* Destaque */
+
+   #destaque {
+      padding: 50px 0px;
+   }
+
+   #destaque .container {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   #hero {
+      text-align: left;
+   }
+
+   #hero img {
+      width: 200px;
+      height: 200px;
+      margin: 0px 25px 0px 0px;
+   }
+
+   .topic {
+      display: none;
+   }
+
+
 }
 
 
@@ -195,11 +269,11 @@ main h2{
    }
 
    /* principal main */
-   main h1{
+   main h1 {
       font-size: 3.9rem;
    }
 
-   main h2{
+   main h2 {
       font-size: 3rem;
    }
 }
@@ -276,23 +350,47 @@ main h2{
    main h2 {
       font-size: 1rem;
    }
+
+   /* destaque */
+  
+   #destaque {
+      background-attachment: fixed;
+   }
+
+   #hero img {
+      width: 400px;
+      height: 400px;
+   }
+
+   .hero-text h2 {
+      font-size: 2rem;
+   }
+
+   .topic {
+      display: flex;
+   }
+
+   .topic p {
+      margin-left: 15px;
+   }
 }
 
 /*- fim do notebook ------------------------ */
 
 /* Notebook /PC /TV  -  FULL HD ou 4k*/
 @media (min-width: 1400px) {
+
    /* layout */
-   .container{
+   .container {
       max-width: 1320px;
    }
 
    /* principal */
-   main h1{
+   main h1 {
       font-size: 6rem;
    }
 
-   main h2{
+   main h2 {
       font-size: 3rem;
       margin-bottom: 190px;
    }
