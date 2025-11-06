@@ -199,7 +199,9 @@ main h2 {
 
 #sobre {
    padding: 50px 10px;
-   background: linear-gradient(to bottom, #f7e0c1ef, #5D4037);
+   /* background: linear-gradient(to bottom, #f7e0c1ef, #5D4037); */
+   background: #ffffff;
+   background: linear-gradient(258deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 97%);
    background-size: cover;
    background-position: center;
 }
@@ -218,12 +220,14 @@ main h2 {
    margin-bottom: 5px;
    color: #ff010d;
 }
+
 .sobre-text p {
    font-size: 1rem;
-   color: #000000;
+   color: var(--branco);
    font-family: 'Open Sans', sans-serif;
    margin-bottom: 25px;
 }
+
 #sobre-video iframe {
    width: 355px;
    height: 196px;
@@ -327,7 +331,7 @@ main h2 {
 
    /* Sobre */
 
-   
+
    #sobre {
       padding: 50px 0px;
    }
@@ -419,7 +423,7 @@ main h2 {
    }
 
    /* destaque */
-  
+
    #destaque {
       background-attachment: fixed;
    }
