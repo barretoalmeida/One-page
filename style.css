@@ -50,6 +50,30 @@ body {
 
 }
 
+/* Cartão */
+
+.card {
+   width: 341px;
+   height: 520px;
+   background-color: var(--marron);
+   margin-top: 25px;
+   border-radius: 25px;
+   border: 2px solid var(--preto);   
+}
+
+.card h2 {
+   font-size: 2rem;
+   color: #fcbe5c;
+   margin: 15px 0px;
+}
+
+.card p {
+   color: #ffffff;
+   font-family: 'Open Sans';
+   text-align: left;
+   padding: 0px 10px 30px 10px;
+}
+
 
 
 /* fim do layout*********************************/
@@ -283,6 +307,60 @@ main h2 {
 #cardapio span {
    display: none;
 }
+
+/* Cartões */
+
+#produto {
+   background-color: var(--bege);
+   padding: 50px 0px;
+}
+
+#produto .container {
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+
+.card img {
+   border-radius: 25px 25px 0px 0px;
+}
+
+#produto .btn {
+   background-color:#fcbe5c;
+}
+
+
+
+
+
+/* endereco */
+address {
+   padding: 50px 0px;
+   background-color: var(--vermelho_escuro);
+   color: #ffffff;
+}
+
+address a {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+address img {
+   padding-top: 15px;
+}
+
+address .container {
+   flex-direction: column;
+}
+
+#endereco {
+   padding-bottom: 30px;
+}
+
+#googlmaps iframe {
+   display: none;
+}
+
 
 /*fim do Smartphone----------------------------- */
 
