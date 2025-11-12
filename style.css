@@ -27,6 +27,10 @@
    box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    font-family: "Lobster Two", "Open Sans";
 }
@@ -382,6 +386,19 @@ footer {
    margin-bottom: 25px;
 }
 
+#copyright a {
+   text-decoration: none;
+   color: var(--bege);
+}
+
+/* botão de subir */
+
+#topo {
+   position: fixed;
+   bottom: 75px;
+   right: 15px;
+}
+
 
 
 /*fim do Smartphone----------------------------- */
@@ -513,6 +530,13 @@ footer {
       margin-bottom: 10px;
    }
 
+   /* cartão */
+   #produto .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
 }
 
 /* fim do tablet ----------------------------*/
@@ -524,8 +548,6 @@ footer {
    .container {
       max-width: 960px;
    }
-
-   /* Principal main */
 
 }
 
@@ -656,6 +678,8 @@ footer {
 
    #googlmaps iframe {
       display: inline;
+      width: 450px;
+      height: 400px;
    }
 
    address .container {
@@ -670,7 +694,6 @@ footer {
    #mapaicon {
       display: inline;
    }
-
 
 }
 
