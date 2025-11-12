@@ -14,6 +14,7 @@
    --branco: #ffffff;
    --preto: #000000;
    --vermelho_escuro: #bf040d;
+   --vinho: #7F0700;
 
 }
 
@@ -72,6 +73,12 @@ body {
    font-family: 'Open Sans';
    text-align: left;
    padding: 0px 10px 30px 10px;
+}
+
+.Flex5 {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
 }
 
 
@@ -330,12 +337,9 @@ main h2 {
 }
 
 
-
-
-
 /* endereco */
 address {
-   padding: 50px 0px;
+   padding: 35px 10px 50px 15px;
    background-color: var(--vermelho_escuro);
    color: #ffffff;
 }
@@ -359,6 +363,23 @@ address .container {
 
 #googlmaps iframe {
    display: none;
+}
+
+#mapaicon {
+   display: none;
+}
+
+/* Rodapé */
+
+footer {
+   padding: 25px 10px;
+   background-color: var(--vinho);
+   color: var(--branco);
+   align-items: center;
+}
+
+#social {
+   margin-bottom: 25px;
 }
 
 
@@ -435,6 +456,16 @@ address .container {
       border-radius: 10px;
    }
 
+   /* rodapé */
+   .Flex5 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   #social {
+      margin-bottom: 0px;
+   }
 
 }
 
@@ -474,6 +505,12 @@ address .container {
       width: 600px;
       height: 280px;
       border-radius: 10px;
+   }
+
+   /* rodapé */
+
+   #social {
+      margin-bottom: 10px;
    }
 
 }
@@ -608,6 +645,32 @@ address .container {
    .cardapio-text {
       font-size: 1rem;
    }
+
+   /* Cartão */
+
+   #produto .container {
+      flex-direction: row;
+   }
+
+   /* endereco */
+
+   #googlmaps iframe {
+      display: inline;
+   }
+
+   address .container {
+   flex-direction: row-reverse;
+   justify-content: space-around;
+   }
+
+   #endereco a {
+      display: none;
+   }
+
+   #mapaicon {
+      display: inline;
+   }
+
 
 }
 
