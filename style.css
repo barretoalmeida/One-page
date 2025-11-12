@@ -678,8 +678,8 @@ footer {
 
    #googlmaps iframe {
       display: inline;
-      width: 450px;
-      height: 400px;
+      width: 350px;
+      height: 300px;
    }
 
    address .container {
